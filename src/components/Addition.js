@@ -12,12 +12,11 @@ const Calcul = (props) => {
     if (props.typeCalcul){
         return (
             <div style={ {backgroundColor : 'pink', width: '400px', padding:'10px', margin:'5px auto' } }>
-                
-                {resultat}
+                <p>Résultat = {resultat}</p>
             </div>
         )
     } else{
-        return <p>Veuillez choisir un chiffre</p>
+        return null
     }
     
 }

@@ -39,12 +39,14 @@ class MyComponent extends Component {
                 <form>
                     <label>Entrez le 1er chiffre: </label>
                     <input type="text" value={ this.state.chiffre1 }  onChange={ this.handleChiffre1 } />
+                    <br/>
                     <label>Entrez le 2e chiffre: </label>
                     <input type="text" value={ this.state.chiffre2 }  onChange={ this.handleChiffre2 } />
-                    <br/>
+                    <br/><br/>
                     <input type="radio" value="Multiplication" name={ this.state.typeCalcul }  onChange={ this.handleTypeCalculAdd } /> Addition
                     <input type="radio" value="Multiplication" name={ this.state.typeCalcul }  onChange={ this.handleTypeCalculMult } /> Multiplication                
                 </form>
+                <br/>
                 <Calcul chiffre1={this.state.chiffre1} chiffre2={this.state.chiffre2} typeCalcul={this.state.typeCalcul}></Calcul>
             </div>
         )

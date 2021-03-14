@@ -8,3 +8,12 @@ phases:
 
       # Upgrade AWS CLI to the latest version
       - pip install --upgrade awscli
+  build:
+    commands:
+      - echo Building...
+      - yarn build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist

@@ -11,11 +11,25 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "devDependencies": {
+    "@babel/core": "~7.7.2",
+    "@babel/preset-env": "~7.7.1",
+    "@babel/preset-react": "~7.7.0",
+    "@testing-library/jest-dom": "~4.2.4",
+    "@testing-library/react": "~9.3.2",
+    "babel-jest": "~24.9.0",
+    "jest": "~24.9.0",
+    "parcel-bundler": "~1.12.4"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "rm -rf dist && parcel build src/index.html",
+    "test": "jest",
+    "watch": "parcel src/index.html"
+  },
+  "dependencies": {
+    "react": ">= 16.3.0",
+    "react-dom": ">= 16.3.0",
+    "styled-components": "~4.4.1"
   },
   "eslintConfig": {
     "extends": [

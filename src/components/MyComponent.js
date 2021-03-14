@@ -35,6 +35,7 @@ class MyComponent extends Component {
     render(){
         return (
             <div>
+                <h1>CI / CD</h1>
                 <form>
                     <label>Entrez le 1er chiffre: </label>
                     <input type="text" value={ this.state.chiffre1 }  onChange={ this.handleChiffre1 } />

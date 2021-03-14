@@ -16,9 +16,9 @@ const Wrapper = styled.div`
 const Root = () => {
   return (
     <Wrapper>
-      <CounterWrapper>
-        <Counter />
-      </CounterWrapper>
+      <div className="App">
+        <MyComponent /> 
+      </div>
     </Wrapper>
   );
 };

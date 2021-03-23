@@ -43,7 +43,7 @@ class MyComponent extends Component {
                     <label>Entrez un 2e chiffre: </label>
                     <input type="text" value={ this.state.chiffre2 }  onChange={ this.handleChiffre2 } />
                     <br/><br/>
-                    <input type="radio" value="Multiplication" name={ this.state.typeCalcul }  onChange={ this.handleTypeCalculAdd } /> Addition
+                    <input type="radio" value="Addition" name={ this.state.typeCalcul }  onChange={ this.handleTypeCalculAdd } /> Addition
                     <input type="radio" value="Multiplication" name={ this.state.typeCalcul }  onChange={ this.handleTypeCalculMult } /> Soustraction                
                 </form>
                 <br/>
